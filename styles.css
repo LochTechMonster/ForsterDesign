@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	background-color: white;
+	background-color: #222222;
 }
 h1,button{
 	text-transform: uppercase;
@@ -91,24 +91,45 @@ original code from https://codepad.co/snippet/FQaiCzbb
 /*
 mid section: using foundation grid system
 */
-.grid-container{
-	display: grid;
-	grid-gap: 50px;
-	grid-template-areas: 
-		'mid-text mid-text jurassic jurassic' 
-		'coaster coaster elite elite'
-		'kinect zoo lost coaster3' 
-		'disney winter scream tales' 
-		'footer footer footer footer';
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	height: 1000px
-}
 .mid-text{
-	grid-area: mid-text;
+	background-color: white;
+}
+.jurrasicbg{
+	background-image: url(img/game-backgrounds/Jurassic-World-Logo-Background.jpg);
+}
+.cell{overflow: hidden;}
+.gamebg{
+	width: 100%;
+	height: 100%;
+	background-color: black; /*if main image doesn't load*/
+	background-position: center;
+	background-size: cover;
+	transition: all .6s;	
 }
 .jurassic{
 	grid-area: jurassic;
+}
+.jurassic:hover .jurassicbg,
+.jurassic:focus .jurassicbg,
+.coaster:hover .coasterbg,
+.coaster:focus .coasterbg,
+.elite:hover .elitebg,
+.elite:focus .elitebg,
+.kinect:hover .kinectbg,
+.kinect:focus .kinectbg,
+.zoo:hover .kinectbg,
+.zoo:focus .focusbg,
+.lost:focus .lostbg,
+.lost:hover .lostbg,
+.coaster3:hover .coaster3bg,
+.coaster3:focus .coaster3bg,
+.disney:hover .disneybg,
+.disney:focus .disneybg,
+.scream:hover .screambg,
+.scream:focus .screambg,
+.tales:hover .talesbg,
+.tales:focus .talesbg{
+	transform: scale(1.2);
 }
 .coaster{
 	grid-area: coaster;
