@@ -97,7 +97,7 @@ mid section: using foundation grid system
 
 }
 .jurrasicbg{
-	background-image: url(img/game-backgrounds/Jurassic-World-Logo-Background.jpg);
+	background-image: url(../img/game-backgrounds/Jurassic-World-Logo-Background.jpg);
 }
 .cell{overflow: hidden;}
 .gamebg{
@@ -139,6 +139,7 @@ mid section: using foundation grid system
 	height: 80%;
 	z-index: 100;
 }
+
 /* 
 Button animation
 taken from http://ianlunn.github.io/Hover/
