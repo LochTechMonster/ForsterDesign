@@ -2,8 +2,10 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/foundation.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--social media icons-->
+	<link rel="stylesheet" href="css/slick-theme.css"/><!--slideshow-->
+	<link rel="stylesheet" href="css/slick.css"/>
 	<meta charset="utf-8">
 	<title>Home - ForsterDesign</title>
 </head>
@@ -17,7 +19,7 @@
 					<li class="item"><a href="about.html">About Us</a></li>
 					<li class="item"><a href="games.html">Our Games</a></li>
 					<li class="item"><a href="#">News</a></li>
-					<li><a href="index.html" class="header-logo"><img src="img/logo white.png" alt="Frontier Logo"><!--todo: edit logo--></a></li>
+					<li><a href="index.html" class="header-logo"><img src="img/logo white.png" alt="Frontier Logo"></a></li>
 					<li class="item"><a href="#">Investors</a></li>
 					<li class="item"><a href="#">Careers</a></li>
 					<li class="item"><a href="#">Contact</a></li>
@@ -28,7 +30,32 @@
 </header>
 <!--main image-->
 <div class="top-parralax"><!--test with: https://github.com/nk-o/jarallax-->
-
+	<div class="data-jarallax-element">
+		<div class="container">
+			<div class="slideshow">
+				<div><img src="img/game-slide/ed1_0001_ShipKit.jpg" alt=""></div>
+				<div><img src="img/game-slide/ed1_0002_RockGeo_Lava_4k.jpg" alt=""></div>
+				<div><img src="img/game-slide/ed1_0003_Multi-crew2.jpg" alt=""></div>
+				<div><img src="img/game-slide/ed1_0004_MULTI-CREW_fixed.jpg" alt=""></div>
+				<div><img src="img/game-slide/ed1_0005_Imperial_Fighter_Geo_4k.jpg" alt=""></div>
+				<div><img src="img/game-slide/ed1_0006_High_Tech_Station.jpg" alt=""></div>
+				<div><img src="img/game-slide/ed1_0007_Beluga1.jpg" alt=""></div>
+				<div><img src="img/game-slide/ed1_0009_1920x1080_Super-Hero-Art-NEW.jpg" alt=""></div>
+				<div><img src="img/game-slide/Jurassic-World-Evolution_01.jpg" alt=""></div>
+				<div><img src="img/game-slide/Jurassic-World-Evolution_02.jpg" alt=""></div>
+				<div><img src="img/game-slide/Jurassic-World-Evolution_03.jpg" alt=""></div>
+				<div><img src="img/game-slide/Jurassic-World-Evolution_04.jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0000_tri-storm-02_0.jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0002_Spring Update Screenshot (7).jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0003_Screenshot_Social (3).jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0004_screenshot_08.jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0005_screenshot_05.jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0006_screenshot_01.jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0007_Launch Screenshot (11).jpg" alt=""></div>
+				<div><img src="img/game-slide/pc__0009_Launch Screenshot (6).jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
 </div>
 <!--main page-->
 <div class="mid-section"><!--using grid system-->
@@ -131,9 +158,10 @@
 			</ul>
 		</div>
 		<div class="footer-logos">
-			<a href="#"><img src="img/xlogo-frontier.png.pagespeed.ic.P4CIgzLBB_.webp" alt=""></a>
-			<a href="#"><img src="img/xlogo-cobra.png.pagespeed.ic.5ShDcv1QUQ.webp" alt=""></a>
+			<a class="frontier-logo" href="#"><img src="img/xlogo-frontier.png.pagespeed.ic.P4CIgzLBB_.webp" alt=""></a>
+			<a class="cobra-logo" href="#"><img src="img/xlogo-cobra.png.pagespeed.ic.5ShDcv1QUQ.webp" alt=""></a>
 		</div>
+		<br>
 		<div class="footer-social">
 			<ul class="social-nav"><!--make sure these work-->
 				<li><a href="#" class="fa fa-twitter"></a></li>
@@ -149,5 +177,10 @@
 		</div>
 	</div>
 </footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script><!--jquery-->
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="jarallax/dist/jarallax-element.min.js"></script><!--Jarallax, parallax effect on slideshow-->
+<script type="text/javascript" src="js/slick.min.js"></script> <!--slideshow-->
+<script type="text/javascript" src="js/slider-initialise.js"></script>
 </body>
 </html>
